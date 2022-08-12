@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --text-color: white;
+}
+
+.main {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.cards{
+  display: inline-block;
+  position: relative;
+  width: 28%;
+  margin-right: 3%;
+  padding: 3%;
+  border-radius: 3%;
+  overflow: hidden;
+}
+
+.main > section:last-child{
+  margin-right: 0;
+}
+
+.card--coral{
+  background: linear-gradient(to right, rgb(245, 190, 142), rgb(249, 91, 117));
+}
+
+.card--blue{
+  background: linear-gradient(to right, rgba(117, 199, 240, 0.832), rgb(63, 145, 237));
+}
+
+.card--green{
+  background: linear-gradient(to right, rgb(46, 216, 190), rgb(27, 201, 181));
+}
+
+.cards-title{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-color);
+  padding-bottom: 10%;
+}
+
+.cards-number{
+  padding-bottom: 18%;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.cards-item{
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+.cards-item::before{
+  content: '';
+  position: absolute;
+  bottom: 25%;
+  left: 70%;
+  border-radius: 50%;
+  width: 50%;
+  height: 80%;
+  background: var(--text-color);
+  opacity: 0.25;
+}
+
+.cards-item:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  border-radius: 50%;
+  width: 50%;
+  height: 80%;
+  background: var(--text-color);
+  opacity: 0.25;
+}
+
+.cards-icon{
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 18%;
+  right: 10%;
+  fill: var(--text-color);
+}
