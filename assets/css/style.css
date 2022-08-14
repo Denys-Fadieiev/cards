@@ -48,11 +48,11 @@
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--text-color);
-  padding-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 .cards-number{
-  padding-bottom: 18%;
+  margin-bottom: 18%;
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--text-color);
@@ -63,11 +63,10 @@
   color: var(--text-color);
 }
 
-.cards-item::before{
+.cards-item::before,
+.cards-item::after{
   content: '';
   position: absolute;
-  bottom: 25%;
-  left: 70%;
   border-radius: 50%;
   width: 50%;
   height: 80%;
@@ -75,16 +74,14 @@
   opacity: 0.25;
 }
 
+.cards-item::before{
+  bottom: 25%;
+  left: 70%;
+}
+
 .cards-item:after{
-  content: '';
-  position: absolute;
   top: 50%;
   left: 55%;
-  border-radius: 50%;
-  width: 50%;
-  height: 80%;
-  background: var(--text-color);
-  opacity: 0.25;
 }
 
 .cards-icon{
